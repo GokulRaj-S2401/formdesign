@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admission Form </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="formWrapper">
+        <div align="center"  >
+            <h1> Admission Form </h1>
+        </div>
+        <form action="">
+            <table width="100%" >
+                <tr>
+                    <td> <label for="firstName"> First Name </label> </td>
+                    <td> <input   pattern="[a-zA-Z].{3,10}"  required type="text" placeholder="Enter your First Name" > </td>
+                </tr>
+                <tr>
+                    <td> <label for="middleName"> Middle Name </label> </td>
+                    <td> <input type="text" pattern="[a-zA-Z].{3,10}" required id="middleName" placeholder="Enter your Middle Name" /> </td>
+                </tr>
+                <tr>
+                    <td> <label for="lastName"> Last Name </label> </td>
+                    <td> <input type="text" pattern="[a-zA-Z].{3,10}" required id="lastName" placeholder="Enter your Last Name" /> </td>
+                </tr>
+                <tr>
+                    <td> <label for="fatherName"> Father Name </label> </td>
+                    <td> <input type="text" required pattern="[a-zA-Z].{3,10}" id="fatherName" placeholder="Enter your Father Name" /> </td>
+                </tr>
+                <tr>
+                    <td> <label for="dob"  >DOB</label> </td>
+                    <td> <input type="date" required id="dob" > </td>
+                </tr>
+                <tr>
+                    <td> <label for="age"> Age </label> </td>
+                    <td> <input type="number" required id="age" placeholder="Enter your age" /> </td>
+                </tr>
+                <tr>
+                    <td> <label for=""> Gender </label> </td>
+                    <td> 
+                        <input type="radio" id="male" name="gender" /> 
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" /> 
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Qualification</label> </td>
+                    <td>
+                        <input type="checkbox" id="bsc" >  <label for="bsc">B.Sc</label>
+                        <input type="checkbox" id="bcom" >  <label for="bcom">B.com</label>
+                        <input type="checkbox" id="bca" >  <label for="bca">BCA</label>
+                        <input type="checkbox" id="bba" >  <label for="bba">BBA</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Hobbies</label> </td>
+                    <td> 
+                        <select required name="" id="" multiple >
+                            <option value="">Listening Music</option>
+                            <option value="">Playing Chess</option>
+                            <option value="">Video Games</option>
+                            <option value="">Book Reading</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>
+                        <textarea required placeholder="Enter your location" name="" id="" cols="50" rows="7"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="pno"> Phone Number </label> </td>
+                    <td> <input required maxlength="10" type="text" placeholder="Enter your phone number" > </td>
+                </tr>
+                <tr>
+                    <td> <label for="email"> Email </label> </td>
+                    <td> <input id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your email" type="email"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="status"> Marital Status </label> </td>
+                    <td>
+                        <input type="radio" id="single" name="status" > 
+                        <label for="single"> Single </label>
+                        <input type="radio" id="married" name="status" > 
+                        <label for="married"> Married </label>
+                    </td>
+                </tr>
+            </table>
+           <div class="btns" >
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+           </div>
+        </form>
+    </div>
+</body>
+</html>
